@@ -36,6 +36,4 @@ class Web3jSpringKotlinApplicationTest {
         }
         println(clientVersion.web3ClientVersion)
     }
-
-
 }
