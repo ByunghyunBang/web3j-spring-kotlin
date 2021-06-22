@@ -28,4 +28,14 @@ class Web3jSpringKotlinApplicationTest {
         }
         println(clientVersion.web3ClientVersion)
     }
+
+    @Test
+    fun `getClientVersionCoroutineWithSomeHack()`() {
+        val clientVersion = runBlocking {
+            web3jService.getClientVersionCoroutineWithSomeHack()
+        }
+        println(clientVersion.web3ClientVersion)
+    }
+
+
 }
