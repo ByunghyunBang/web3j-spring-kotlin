@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class Web3jSpringKotlinApplicationTests {
+class Web3jSpringKotlinApplicationTest {
 
     @Autowired
     private lateinit var web3jService: Web3jService
