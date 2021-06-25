@@ -22,7 +22,7 @@ class Web3jService(
         }
     }
 
-    suspend fun getClientVersionCoroutineWithSomeHack(): Web3ClientVersion {
+    suspend fun getClientVersionAsync(): Web3ClientVersion {
         return web3j.web3ClientVersion().sendAsync().awaitOrNull() ?: throw Exception("timeout exception")
     }
 }

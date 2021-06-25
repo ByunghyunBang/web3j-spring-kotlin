@@ -30,9 +30,9 @@ class Web3jSpringKotlinApplicationTest {
     }
 
     @Test
-    fun `getClientVersionCoroutineWithSomeHack()`() {
+    fun `getClientVersionAsync()`() {
         val clientVersion = runBlocking {
-            web3jService.getClientVersionCoroutineWithSomeHack()
+            web3jService.getClientVersionAsync()
         }
         println(clientVersion.web3ClientVersion)
     }
